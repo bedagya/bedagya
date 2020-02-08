@@ -1,19 +1,1 @@
 # bedagya
-<html>
-<head>
-    <title>Bulb</title>
-</head>
-<body>
-    <img id="bulb" src="img_bulboff.gif">
-<button onclick="turnOn()">Turn On</button>
-<button onclick="turnOff()">Turn Off</button>
-<script>
-function turnOn(){
-    document.getElementById("bulb").src="img_bulbon.gif";
-}
-function turnOff(){
-    document.getElementById("bulb").src="img_bulboff.gif";
-}
-</script>
-</body>
-</html>
