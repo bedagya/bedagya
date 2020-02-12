@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Length converter</title>
+</head>
+<body>
+    <script>
+       let distance = prompt("Enter a Distance");
+       var choice = prompt("km/m/mm?:");
+       var convert = prompt("what do u want to convert it into?:")
+       if (confirm(`Did you choose to convert ${distance} ${choice} into ${convert}`)) {
+  
+  if (choice=== "km")
+if(convert=== "m"){
+    alert(`${distance*1000} m`)
+}
+else if(convert=== "mm"){
+    alert(`${distance*1000000} mm`)
+}
+else{
+    alert(`${distance} km`)
+}
+else if(choice=== "m"){
+    if(convert=== "km"){
+        alert(`${distance/1000} km`)
+    }
+    else if(choice=== "mm"){
+        alert(`${distance*1000} mm`)
+   }
+    else{
+        alert(`${distace} m`)
+    }
+}
+else{
+    if(choice= "km"){
+        alert(`${distance/1000000} km`)
+    }
+    else if(choice=== "m"){
+        alert(`${distance*1000} m`)
+    }
+    else{
+        alert(`${distance} mm`)
+    }
+}
+       
+} else {
+    alert("You pressed Cancel!");
+  }
+
+    </script>
+</body>

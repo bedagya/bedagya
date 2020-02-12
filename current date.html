@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Current date</title>
+</head>
+<body>
+    <script>
+        if(confirm("Do you want to know toda's date?")){
+             var today = new Date();
+var yyyy = today.getFullYear()
+var mm = (today.getMonth()+1)
+var dd = today.getDate()
+if(dd<10){
+    dd='0'+dd
+}
+if(mm<10){
+    mm='0'+mm
+}
+var date= mm+'-'+dd+'-'+yyyy
+alert(`The current date is ${date}`) 
+        }
+        else{
+            alert("You have choosen cancel")
+        }
+    </script>
+</body>
