@@ -19,7 +19,7 @@ var da = today.getDate();
         }
         else{
         if(confirm(`Were you born on ${year} year ${month} month and ${day} day?`)){
-            if(mo<month){
+            if(mo<month){        
                 a=month-mo
                 b=12-a
             }
@@ -33,10 +33,14 @@ var da = today.getDate();
             else{
                 x=da-day
             }
-         alert(`You are currently ${ye-year} years ${b} months ${x} days old`)   
+            if(mo<month){
+            alert(`You are currently ${ye-year-1} years ${b} months ${x} days old`)   
         }
         else{
-             alert("Please reload page")
+            alert(`You are currently ${ye-year} years ${b} months ${x} days old`)
+        }}
+        else{
+            alert("Please reload page")
         }
         }
     </script>
